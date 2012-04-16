@@ -1,0 +1,5 @@
+This python file crawl your points history in Kongregate, i.e. http://www.kongregate.com/accounts/Jayisgames/points
+
+Remember to change your username in "url".
+
+The result file is tab-separated, in lines.
