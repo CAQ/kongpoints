@@ -2,4 +2,7 @@ This python file crawl your points history in Kongregate, i.e. http://www.kongre
 
 Remember to change your username in "url".
 
+BeautifulSoup 4 is required, please point the symbolic link bs4 to your directory.
+http://www.crummy.com/software/BeautifulSoup/#Download
+
 The result file is tab-separated, in lines.
