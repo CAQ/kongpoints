@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
-import urllib2
+import urllib2, sys
 
 def getSoup(url):
     if url.startswith('/'):
@@ -22,7 +22,7 @@ def purify(s):
     else:
         return s
 
-url = "http://www.kongregate.com/accounts/CAQ9/points"
+url = "http://www.kongregate.com/accounts/" + sys.argv[1] + "/points"
 mycount = 0
 
 filename = 'pointhistory.txt'
@@ -34,7 +34,7 @@ while url is not None:
     soup = getSoup(url)
     body = soup.body
 
-    fw = open('pointhistory.txt', 'a')
+    fw = open(filename, 'a')
 
     ## parse history table
     table = body.findAll('table', {'class':'rewards'}, limit=1)[0]

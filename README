@@ -1,8 +1,10 @@
 This python file crawl your points history in Kongregate, i.e. http://www.kongregate.com/accounts/Jayisgames/points
 
-Remember to change your username in "url".
+Your username is input as an argument, i.e.:
+python backupkongpoints.py Jayisgames
 
-BeautifulSoup 4 is required, please point the symbolic link bs4 to your directory.
+The result file 'pointhistory.txt' is tab-separated, in lines. The first line is the header.
+
+BeautifulSoup 4 is required:
 http://www.crummy.com/software/BeautifulSoup/#Download
 
-The result file is tab-separated, in lines.
